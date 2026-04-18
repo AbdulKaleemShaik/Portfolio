@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download, ChevronDown, Code2, Zap, Sparkles } from "lucide-react";
+import { Github, Linkedin, Download, ChevronDown, Code2, Zap, Sparkles } from "lucide-react";
 import { personalInfo, stats } from "@/lib/data";
 
 const roles = [

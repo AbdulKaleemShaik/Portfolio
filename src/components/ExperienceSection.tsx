@@ -50,7 +50,7 @@ export default function ExperienceSection() {
 
                 {/* Roles */}
                 <div className="divide-y divide-indigo-500/10">
-                  {exp.roles.map((role, ri) => (
+                  {exp.roles.map((role) => (
                     <div key={role.title} className="px-6 py-5">
                       <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
                         <div>

@@ -8,7 +8,6 @@ const allTags = ["All", "Node.js", "Java", "Spring Boot", "MongoDB", "Redis", "R
 
 export default function ProjectsSection() {
   const [filter, setFilter] = useState("All");
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   const filtered = filter === "All"
     ? projects
@@ -51,8 +50,6 @@ export default function ProjectsSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.15 }}
-                  onMouseEnter={() => setHoveredId(project.id)}
-                  onMouseLeave={() => setHoveredId(null)}
                   className="project-card group relative"
                 >
                   {/* Top accent bar */}

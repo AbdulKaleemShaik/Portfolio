@@ -76,7 +76,7 @@ export default function ContactSection() {
             <CheckCircle size={18} className="text-emerald-400 flex-shrink-0" />
             <div>
               <p className="text-sm font-semibold text-white">Message sent successfully!</p>
-              <p className="text-xs text-emerald-300 mt-0.5">I'll get back to you within 24 hours.</p>
+              <p className="text-xs text-emerald-300 mt-0.5">I&apos;ll get back to you within 24 hours.</p>
             </div>
           </motion.div>
         )}
