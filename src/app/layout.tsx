@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Abdul Kaleem Shaik | Software Engineer",
   description:
-    "Software Engineer with 1+ year of experience building scalable backend systems using Java, Spring Boot, Node.js, and React. Specializing in REST APIs, Redis caching, and cloud deployments.",
+    "Software Engineer with 2 years of experience building scalable backend systems using Java, Spring Boot, Node.js, and React. Specializing in REST APIs, Redis caching, and cloud deployments.",
   keywords: [
     "Abdul Kaleem Shaik",
     "Software Engineer",
