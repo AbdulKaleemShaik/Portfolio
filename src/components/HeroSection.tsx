@@ -153,7 +153,7 @@ export default function HeroSection() {
             <strong className="text-slate-200">40%</strong> using Redis caching — all in production.
           </p>
           <p className="text-sm text-slate-500 max-w-2xl leading-relaxed mb-10">
-            1+ year at Appitsimple · Oracle Certified Java · 300+ LeetCode · B.Tech CSE · Open to SDE roles globally.
+            2 years at Appitsimple · Oracle Certified Java · 795+ LeetCode · B.Tech CSE · Open to SDE roles globally.
           </p>
 
           {/* CTA Buttons — Resume download is #1 priority */}
