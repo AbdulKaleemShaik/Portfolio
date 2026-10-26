@@ -75,7 +75,7 @@ export default function AboutSection() {
                   rel="noopener noreferrer"
                   className="tech-tag hover:cursor-pointer"
                 >
-                  LeetCode 300+
+                  LeetCode 795+
                 </a>
               </div>
             </div>
