@@ -6,14 +6,14 @@ export const personalInfo = {
   phone: "9676745715",
   github: "https://github.com/AbdulKaleemShaik",
   linkedin: "https://www.linkedin.com/in/skabdulkaleem/",
-  leetcode: "https://leetcode.com/u/AbdulSHANNU/",
+  leetcode: "https://leetcode.com/u/AbdulKaleemShaik/",
   avatarUrl: "https://avatars.githubusercontent.com/u/131956728?v=4",
   summary:
-    "Software Engineer with 1+ year of experience building scalable backend systems using Java, Spring Boot, and Node.js. Improved API latency by 25% and reduced database load by 40% using Redis caching in production systems serving 10K+ users. Skilled in architecting REST APIs, optimizing database performance, and deploying on AWS via Docker and CI/CD pipelines.",
+    "Software Engineer with 2 years of experience building scalable backend systems using Java, Spring Boot, and Node.js. Improved API latency by 25% and reduced database load by 40% using Redis caching in production systems serving 10K+ users. Skilled in architecting REST APIs, optimizing database performance, and deploying on AWS via Docker and CI/CD pipelines.",
 };
 
 export const stats = [
-  { label: "LeetCode Problems", value: "300+" },
+  { label: "LeetCode Problems", value: "795+" },
   { label: "Production Features", value: "8+" },
   { label: "API Latency Reduced", value: "25%" },
   { label: "DB Load Reduced", value: "40%" },
@@ -37,6 +37,24 @@ export const skills = {
 
 export const projects = [
   {
+    id: 7,
+    title: "NotifyFlow: Multi-Tenant Notification Engine",
+    description:
+      "Multi-channel notification platform delivering in-app (WebSocket), email and webhook notifications per tenant, with async BullMQ queues, a hand-written Redis sliding-window rate limiter and a real-time analytics pipeline.",
+    techStack: ["Node.js", "Express", "BullMQ", "Redis", "MongoDB", "WebSockets", "Docker", "Jenkins"],
+    highlights: [
+      "Idempotent BullMQ workers with retries and dead-letter handling, preventing duplicate notifications",
+      "Redis sorted-set sliding-window rate limiter configurable per tenant",
+      "HMAC-signed outbound webhooks and Protocol Buffers on internal queues and Pub/Sub",
+      "Horizontally scaled stateless workers, graceful shutdown and Jenkins CI/CD",
+    ],
+    github: "https://github.com/AbdulKaleemShaik/notifyflow",
+    live: null,
+    featured: true,
+    year: "2026",
+    category: ["Node.js", "MongoDB", "Redis", "Docker"],
+  },
+  {
     id: 1,
     title: "BookFlow: Multi-Tenant SaaS Booking Platform",
     description:
@@ -48,7 +66,7 @@ export const projects = [
       "Coupon engine: percentage/fixed discounts, min-spend thresholds, time-bounded validity",
       "Dockerized full stack for consistent local and production environments",
     ],
-    github: "https://github.com/AbdulKaleemShaik/Multi-Tenant-Booking",
+    github: "https://github.com/AbdulKaleemShaik/bookflow-saas-booking",
     live: null,
     featured: true,
     year: "2026",
@@ -83,9 +101,9 @@ export const projects = [
       "Structured prompt engineering for reliable LLM outputs",
       "TypeScript-first architecture with strong type safety",
     ],
-    github: "https://github.com/AbdulKaleemShaik/AI-Planning-Agent",
+    github: "https://github.com/AbdulKaleemShaik/planforce-ai",
     live: null,
-    featured: false,
+    featured: true,
     year: "2026",
     category: ["Node.js", "TypeScript"],
   },
@@ -101,7 +119,7 @@ export const projects = [
       "JWT authentication with protected routes and session management",
     ],
     github:
-      "https://github.com/AbdulKaleemShaik/E-Learning-Platform-Empowering-Education-Through-Technology-MERN-Stack-",
+      "https://github.com/AbdulKaleemShaik/elearning-platform-mern",
     live: null,
     featured: false,
     year: "2024",
@@ -183,6 +201,6 @@ export const education = {
 
 export const certifications = [
   { name: "Oracle Certified Foundations Associate", detail: "Java" },
-  { name: "LeetCode", detail: "300+ DSA Problems" },
+  { name: "LeetCode", detail: "795+ problems (430 Medium, 85 Hard)" },
   { name: "Shining Star Award", detail: "Awarded twice at Appitsimple for exceptional performance" },
 ];
