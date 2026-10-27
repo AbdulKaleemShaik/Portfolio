@@ -22,6 +22,8 @@ export const stats = [
 export const skills = {
   Backend: [
     "Java (Oracle Certified)",
+    "BullMQ",
+    "WebSockets",
     "Spring Boot",
     "Node.js",
     "Express.js",
@@ -30,8 +32,8 @@ export const skills = {
     "JWT",
   ],
   Frontend: ["React.js", "HTML5", "CSS3", "Next.js"],
-  Databases: ["MySQL", "MongoDB", "Redis"],
-  "Cloud & DevOps": ["AWS (EC2, S3, Lambda)", "Docker", "Kubernetes", "Jenkins", "CI/CD"],
+  Databases: ["MySQL", "MongoDB", "Redis", "Flyway"],
+  "Cloud & DevOps": ["AWS (EC2, S3, Lambda)", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Prometheus", "CI/CD"],
   Core: ["Data Structures & Algorithms", "OOP", "SOLID Principles", "System Design"],
 };
 
@@ -79,7 +81,7 @@ export const projects = [
       "Farmer-to-consumer marketplace with catalogue, cart, checkout and order fulfilment. Spring Boot 3 REST API secured with Spring Security + JWT, MySQL with Flyway migrations, and a React frontend.",
     techStack: ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL", "Flyway", "Docker", "React"],
     highlights: [
-      "Optimistic locking (@Version) so concurrent checkouts never oversell stock, proven by a concurrency test",
+      "Row locks (SELECT FOR UPDATE, fixed order) + @Version stop overselling; CI on MySQL caught and fixed a deadlock",
       "JWT role-based security (customer, farmer, admin), account lockout and hashed OTP password reset",
       "Flyway migrations, Docker, Swagger UI and 70 tests in CI against H2 and real MySQL",
       "Layered Spring Boot REST API with DTO validation, global error handling and paginated search",
