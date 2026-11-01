@@ -9,32 +9,23 @@ export const personalInfo = {
   leetcode: "https://leetcode.com/u/AbdulKaleemShaik/",
   avatarUrl: "https://avatars.githubusercontent.com/u/131956728?v=4",
   summary:
-    "Software Engineer with 2 years of experience building scalable backend systems using Java, Spring Boot, and Node.js. Improved API latency by 25% and reduced database load by 40% using Redis caching in production systems serving 10K+ users. Skilled in architecting REST APIs, optimizing database performance, and deploying on AWS via Docker and CI/CD pipelines.",
+    "Full-Stack Software Engineer with 2 years of experience building scalable backend systems and REST APIs using Java (Spring Boot), Node.js and React. Experienced with MySQL, MongoDB, Redis caching, JWT-based security, microservices and Docker-based CI/CD. Promoted from intern in 6 months and received the Shining Star Award twice.",
 };
 
 export const stats = [
+  { label: "Years Experience", value: "2" },
+  { label: "Features Shipped", value: "10+" },
+  { label: "Shining Star Awards", value: "2×" },
   { label: "LeetCode Problems", value: "795+" },
-  { label: "Production Features", value: "8+" },
-  { label: "API Latency Reduced", value: "25%" },
-  { label: "DB Load Reduced", value: "40%" },
 ];
 
 export const skills = {
-  Backend: [
-    "Java (Oracle Certified)",
-    "BullMQ",
-    "WebSockets",
-    "Spring Boot",
-    "Node.js",
-    "Express.js",
-    "REST APIs",
-    "Microservices",
-    "JWT",
-  ],
-  Frontend: ["React.js", "HTML5", "CSS3", "Next.js"],
-  Databases: ["MySQL", "MongoDB", "Redis", "Flyway"],
-  "Cloud & DevOps": ["AWS (EC2, S3, Lambda)", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Prometheus", "CI/CD"],
-  Core: ["Data Structures & Algorithms", "OOP", "SOLID Principles", "System Design"],
+  Languages: ["Java (Oracle Certified)", "JavaScript (Node.js)", "SQL"],
+  Backend: ["Spring Boot", "Spring Security", "Node.js", "Express.js", "REST APIs", "Microservices", "JWT"],
+  Frontend: ["React.js", "HTML5", "CSS3"],
+  Databases: ["MySQL", "MongoDB", "Redis"],
+  "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "GitHub Actions", "CI/CD", "Git", "Linux"],
+  Core: ["Data Structures & Algorithms", "OOP", "SOLID Principles"],
 };
 
 export const projects = [
@@ -45,10 +36,10 @@ export const projects = [
       "Multi-channel notification platform delivering in-app (WebSocket), email and webhook notifications per tenant, with async BullMQ queues, a hand-written Redis sliding-window rate limiter and a real-time analytics pipeline.",
     techStack: ["Node.js", "Express", "BullMQ", "Redis", "MongoDB", "WebSockets", "Prometheus", "Docker"],
     highlights: [
-      "Idempotent BullMQ workers with retries and dead-letter handling, preventing duplicate notifications",
-      "Redis sorted-set sliding-window rate limiter and JWT refresh-token rotation per tenant",
-      "Prometheus metrics (latency histogram, queue depth), OpenAPI docs and 144 tests in GitHub Actions CI",
-      "HMAC-signed webhooks, Protocol Buffers over Redis Pub/Sub, horizontally scaled stateless workers",
+      "4-service architecture (API, BullMQ worker, WebSocket server, dashboard) that decouples ingestion from delivery",
+      "Protocol Buffers over Redis Pub/Sub, letting WebSocket servers scale horizontally with no shared state",
+      "3 delivery channels (in-app, email, signed webhooks) with retries, a dead-letter queue and idempotency",
+      "Per-tenant Redis sliding-window rate limiter, JWT rotation, Prometheus metrics and Swagger docs",
     ],
     github: "https://github.com/AbdulKaleemShaik/notifyflow",
     live: null,
@@ -64,9 +55,9 @@ export const projects = [
     techStack: ["Node.js", "Express", "React", "MongoDB", "Redis", "Stripe", "Docker", "Kubernetes"],
     highlights: [
       "Redis distributed lock (SET NX + Lua release) prevents double-booking under concurrent requests",
-      "Idempotent Stripe webhooks with guarded status transitions; rate-limited auth and Helmet headers",
-      "Strict tenantId isolation and 5-role RBAC, proven by 53 Jest + Supertest tests in CI",
-      "Dockerized full stack with Kubernetes manifests, Terraform and Swagger API docs",
+      "Strict tenantId data isolation and RBAC across 5 roles",
+      "Stripe payments with idempotent webhooks; rate-limited auth and Helmet headers",
+      "Redis cache-aside caching for services and slots, invalidated on every booking or schedule change",
     ],
     github: "https://github.com/AbdulKaleemShaik/bookflow-saas-booking",
     live: null,
@@ -81,10 +72,10 @@ export const projects = [
       "Farmer-to-consumer marketplace with catalogue, cart, checkout and order fulfilment. Spring Boot 3 REST API secured with Spring Security + JWT, MySQL with Flyway migrations, and a React frontend.",
     techStack: ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL", "Flyway", "Docker", "React"],
     highlights: [
-      "Row locks (SELECT FOR UPDATE, fixed order) + @Version stop overselling; CI on MySQL caught and fixed a deadlock",
-      "JWT role-based security (customer, farmer, admin), account lockout and hashed OTP password reset",
-      "Flyway migrations, Docker, Swagger UI and 70 tests in CI against H2 and real MySQL",
-      "Layered Spring Boot REST API with DTO validation, global error handling and paginated search",
+      "Row locks + optimistic locking stop overselling under concurrent checkouts; fixed a MySQL deadlock",
+      "Layered Spring Boot REST API with Spring Security JWT auth, role-based access and account lockout",
+      "Centralized error handling with @RestControllerAdvice, returning HTTP 409 on lock conflicts",
+      "Flyway schema migrations, Docker and automated builds in CI",
     ],
     github: "https://github.com/AbdulKaleemShaik/AgriConnect",
     live: null,
@@ -170,23 +161,16 @@ export const experience = [
     roles: [
       {
         title: "Software Engineer",
-        tech: "Node.js · MongoDB · Redis · React.js · JWT · AWS Lambda · Docker",
-        period: "Jul 2025 – Present",
+        tech: "Node.js · Express · MongoDB · MySQL · Redis · React.js · AWS",
+        period: "Jan 2025 – Present",
         achievements: [
-          "Re-engineered MongoDB aggregation pipelines with compound indexing and query projection, reducing p95 latency by 25% across services handling 10K+ concurrent users.",
-          "Integrated Redis as a distributed caching layer for session management and high-frequency reads, cutting DB load by 40% and improving throughput on critical endpoints.",
-          "Designed a zero-trust auth system with JWT refresh-token rotation, Redis-backed blacklisting, and granular RBAC, eliminating session fixation vulnerabilities across 3 web apps.",
-          "Architected an automated cleanup pipeline via AWS Lambda for periodic deletion of stale MongoDB records, reducing storage costs by 16% and improving query performance.",
-        ],
-      },
-      {
-        title: "Software Engineer Intern",
-        tech: "MERN Stack · MySQL · REST APIs · SOLID",
-        period: "Jan 2025 – Jul 2025",
-        achievements: [
-          "Shipped 8 production features end-to-end using the MERN stack, contributing to a 20% uplift in overall application performance benchmarks.",
-          "Resolved N+1 query issues and added composite indexes on MySQL and MongoDB, reducing critical API response times by 30% (~800ms → ~560ms).",
-          "Cut React bundle size by 35% and initial load time by 20% via lazy loading, React.memo, and Webpack chunk splitting.",
+          "Owned 10+ features end-to-end for a B2B SaaS platform: MongoDB schema design, REST APIs in Node.js/Express and React UI, shipped in Agile sprints with product and QA teams.",
+          "Optimized 8+ high-traffic MongoDB aggregation pipelines by redesigning them with compound indexes and projections, eliminating full-collection scans (verified via explain()).",
+          "Introduced Redis caching for sessions and 15+ high-frequency read APIs, cutting repeated MongoDB round-trips and letting the team defer a planned database upgrade.",
+          "Designed JWT auth with refresh-token rotation, Redis-backed token blacklisting and granular RBAC, closing privilege-escalation gaps across 3 production apps.",
+          "Built an AWS Lambda job to auto-purge stale MongoDB records, fixing unbounded data growth; removed N+1 query patterns on 10+ MySQL and MongoDB endpoints with composite indexes.",
+          "Developed 4 third-party API integrations to sync data reliably between external platforms and the product; debugged production issues, reviewed pull requests and supported releases.",
+          "Started as an intern, promoted to full-time in 6 months, and received the Shining Star Award twice.",
         ],
       },
     ],
@@ -204,5 +188,5 @@ export const education = {
 export const certifications = [
   { name: "Oracle Certified Foundations Associate", detail: "Java" },
   { name: "LeetCode", detail: "795+ problems (430 Medium, 85 Hard)" },
-  { name: "Shining Star Award", detail: "Awarded twice at Appitsimple for exceptional performance" },
+  { name: "Shining Star Award", detail: "Received twice at Appitsimple" },
 ];

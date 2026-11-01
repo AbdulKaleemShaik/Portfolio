@@ -4,6 +4,7 @@ import { Layers } from "lucide-react";
 import { skills } from "@/lib/data";
 
 const categoryColors: Record<string, string> = {
+  Languages: "from-rose-500/20 to-rose-600/5 border-rose-500/20",
   Backend: "from-indigo-500/20 to-indigo-600/5 border-indigo-500/20",
   Frontend: "from-cyan-500/20 to-cyan-600/5 border-cyan-500/20",
   Databases: "from-emerald-500/20 to-emerald-600/5 border-emerald-500/20",
@@ -12,6 +13,7 @@ const categoryColors: Record<string, string> = {
 };
 
 const categoryDotColors: Record<string, string> = {
+  Languages: "bg-rose-400",
   Backend: "bg-indigo-400",
   Frontend: "bg-cyan-400",
   Databases: "bg-emerald-400",
