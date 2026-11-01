@@ -148,12 +148,14 @@ export default function HeroSection() {
 
           {/* One-liner impact statement */}
           <p className="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed mb-4">
-            I build backend systems that <strong className="text-slate-200">serve 10K+ users</strong>,
-            cut API latency by <strong className="text-slate-200">25%</strong>, and slash DB load by{" "}
-            <strong className="text-slate-200">40%</strong> using Redis caching — all in production.
+            I build backend systems that <strong className="text-slate-200">stay correct under load</strong>:
+            fast <strong className="text-slate-200">REST APIs</strong>, <strong className="text-slate-200">Redis caching</strong>,
+            secure <strong className="text-slate-200">JWT auth</strong>, and concurrency-safe bookings and checkouts,
+            with <strong className="text-slate-200">Java (Spring Boot)</strong>, <strong className="text-slate-200">Node.js</strong> and React.
           </p>
           <p className="text-sm text-slate-500 max-w-2xl leading-relaxed mb-10">
-            2 years at Appitsimple · Oracle Certified Java · 795+ LeetCode · B.Tech CSE · Open to SDE roles globally.
+            Hyderabad, India · 2 years at Appitsimple (B2B SaaS) · Promoted from intern in 6 months · Oracle Certified Java ·
+            Open to Backend / Full-Stack roles · Immediate joiner
           </p>
 
           {/* CTA Buttons — Resume download is #1 priority */}

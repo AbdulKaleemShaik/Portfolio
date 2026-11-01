@@ -55,10 +55,10 @@ export default function AboutSection() {
               </p>
 
               <p className="text-slate-400 leading-relaxed text-sm">
-                I thrive at the intersection of performance engineering and clean architecture — whether
-                that&apos;s slashing API latency with Redis caching strategies, building zero-trust auth
-                flows, or architecting event-driven microservices on AWS. Every problem I work on starts
-                with understanding the system deeply, then solving it with precision.
+                I enjoy the hard parts of backend work: making slow queries fast with the right indexes,
+                caching with Redis, securing APIs with JWT and RBAC, and keeping data correct when many users
+                act at once. In my own projects I&apos;ve built a queue-based notification engine, a multi-tenant
+                booking platform with Stripe payments, and a Spring Boot marketplace with concurrency-safe checkout.
               </p>
 
               {/* Social links */}
