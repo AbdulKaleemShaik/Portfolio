@@ -154,7 +154,7 @@ export default function HeroSection() {
             with <strong className="text-slate-200">Java (Spring Boot)</strong>, <strong className="text-slate-200">Node.js</strong> and React.
           </p>
           <p className="text-sm text-slate-500 max-w-2xl leading-relaxed mb-10">
-            Hyderabad, India · 2 years at Appitsimple (B2B SaaS) · Promoted from intern in 6 months · Oracle Certified Java ·
+            Hyderabad, India · 1.8 years at Appitsimple (B2B SaaS) · Promoted from intern in 6 months · Oracle Certified Java ·
             Open to Backend / Full-Stack roles · Immediate joiner
           </p>
 

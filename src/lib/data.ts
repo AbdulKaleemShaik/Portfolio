@@ -9,11 +9,11 @@ export const personalInfo = {
   leetcode: "https://leetcode.com/u/AbdulKaleemShaik/",
   avatarUrl: "https://avatars.githubusercontent.com/u/131956728?v=4",
   summary:
-    "Full-Stack Software Engineer with 2 years of experience building scalable backend systems and REST APIs using Java (Spring Boot), Node.js and React. Experienced with MySQL, MongoDB, Redis caching, JWT-based security, microservices and Docker-based CI/CD. Promoted from intern in 6 months and received the Shining Star Award twice.",
+    "Full-Stack Software Engineer with 1.8 years of experience building scalable backend systems and REST APIs using Java (Spring Boot), Node.js and React. Experienced with MySQL, MongoDB, Redis caching, JWT-based security, microservices and Docker-based CI/CD. Promoted from intern in 6 months and received the Shining Star Award twice.",
 };
 
 export const stats = [
-  { label: "Years Experience", value: "2" },
+  { label: "Years Experience", value: "1.8" },
   { label: "Features Shipped", value: "10+" },
   { label: "Shining Star Awards", value: "2×" },
   { label: "LeetCode Problems", value: "795+" },
@@ -162,7 +162,7 @@ export const experience = [
       {
         title: "Software Engineer",
         tech: "Node.js · Express · MongoDB · MySQL · Redis · React.js · AWS",
-        period: "Jan 2025 – Present",
+        period: "Jan 2025 – Oct 2026",
         achievements: [
           "Owned 10+ features end-to-end for a B2B SaaS platform: MongoDB schema design, REST APIs in Node.js/Express and React UI, shipped in Agile sprints with product and QA teams.",
           "Optimized 8+ high-traffic MongoDB aggregation pipelines by redesigning them with compound indexes and projections, eliminating full-collection scans (verified via explain()).",
